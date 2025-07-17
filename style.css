@@ -1,0 +1,90 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+    color: white;
+    
+}
+html,
+
+body{
+    height:100%;
+
+}
+body{
+    background: linear-gradient(135deg, #0f2027, #2c5364 70%, #00f2fe 100%);
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    color: #fff;
+    min-height: 100vh;
+}
+
+nav {
+    width: 100%;
+    padding: 20px 0;
+    background: linear-gradient(90deg, #00f2fe 0%, #4facfe 100%);
+    box-shadow: 0 4px 30px rgba(0,255,255,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    border-radius: 0 0 20px 20px;
+}
+
+nav h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow: 0 0 10px #00f2fe, 0 0 20px #4facfe;
+    margin: 0 20px;
+}
+
+h1, h2, h4 {
+    text-align: center;
+    margin: 20px 0;
+    font-weight: 700;
+    text-shadow: 0 0 8px #00f2fe, 0 0 16px #4facfe;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+h4 {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+#box, #box1 {
+    width: 120px;
+    height: 120px;
+    margin: 40px auto 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 0 30px 10px #00f2fe, 0 0 60px 20px #4facfe;
+    display: block;
+    transition: box-shadow 0.3s;
+}
+
+#box {
+    background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+}
+
+#box1 {
+    background: linear-gradient(135deg, #fc00ff 0%, #00dbde 100%);
+    margin-top: 30px;
+}
+
+#box:hover, #box1:hover {
+    box-shadow: 0 0 60px 20px #fff, 0 0 100px 40px #00f2fe;
+}
+
+@media (max-width: 600px) {
+    nav h1 {
+        font-size: 1.5rem;
+    }
+    #box, #box1 {
+        width: 80px;
+        height: 80px;
+    }
+}
